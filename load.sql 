@@ -1,0 +1,18 @@
+Insert into User (UserID, Name, Phone_num, Address, Total_Rating, Num_Rating) values
+('yaf45@pitt.edu', 'Jenny Wallace', 1230004000, '1234 Elmwood Ave, Rochester, NY, 14620', 100, 25),
+('micheal@gmail.com', 'Micheal Classen', 1102203300, '145 Fifth Ave, Pittsburgh, PA, 15260', 40, 8),
+('Jeff33@ur.rochester.edu', 'Jeff Fisher', 1400900200, '23 Forbes Ave, Erie, PA, 15122', 100, 30);
+
+Insert into Account (UserID, Password, Forgetme, CreationDate) values
+('yaf45@pitt.edu', '341972FGH', 'Hawaii', '2020-10-22'),
+('micheal@gmail.com', 'YES199712', 'Fiji', '2020-10-23'),
+('Jeff33@ur.rochester.edu', '357008456', 'Wikiki', '2020-10-24');
+
+Insert into Item (ItemID, UserID, ListingPrice, ListingDate, ItemDescription, Availability, Quantity) values
+(1300000000, 'yaf45@pitt.edu', 10.25, '2020-10-22', 'Headphone', 0, 2),
+(1220000000, 'micheal@gmail.com', 120.00, '2020-10-23', 'Bike', 0, 1),
+(1100000000, 'Jeff33@ur.rochester.edu', 23.50, '2020-10-24', 'Calculator', 1, 1);
+
+Insert into Item_Purchases (ItemID, UserID, PurchaseDate, PurchasePrice) values
+(1220000000, 'Jeff33@ur.rochester.edu', '2020-10-25', 120.00),
+(1300000000, 'Jeff33@ur.rochester.edu', '2020-10-26', 10.25);
